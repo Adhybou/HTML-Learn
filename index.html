@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning HTML</title>
+    <!-- Logo -->
+     <link rel="shortcut icon" href="./png/html_logo.png">
+</head>
+
+<body>
+    <nav>
+        <!-- UL = Unordered List -->
+         <ul>
+            <li><a href="/">Accueil</a></li>
+            <li>Boutique</li>
+            <!-- #forms = id of a section or another div -->
+            <li><a href="#forms">Formulaire</a></li>
+         </ul>
+    </nav>
+
+    <header>
+        <!-- Un seul H1 par page -->
+         <h1>That's my work</h1>
+         <p>Texte classique</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Ordered List</h2>
+            <ol>
+                <li>This is</li>
+                <li>an ordered</li>
+                <li>list</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Image en HTML</h3>
+            <img src="./png/LongSword.png" alt="LongSword_MHW">
+
+            <div>
+                <h4>Tables</h4>
+                <table border="4">
+                    <thead>
+                        <!-- "Table Row" = tr -->
+                        <tr>
+                            <!-- "Table Head Columns" = th -->
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                            <th>Column 3</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <!-- "Table Columns" = td -->
+                            <td>Info 1</td>
+                            <td>Info 2</td>
+                            <td>Info 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <h5> <i>&#128170;</i> Link</h5>
+                <!-- target="_blank" open the link in a new tab -->
+                <a href="https://htmlcheatsheet.com" target="_blank">HTML Cheat Sheet</a>
+            </div>
+
+            <div>
+                <h6> <i>&#127936;</i> Video</h6>
+                <a href="https://pixabay.com/fr/videos/basketball-cerceau-rapporter-urbain-208442/" target="_blank">
+                    <video src="./mp4/Bucket.mp4" height="200" autoplay muted loop></video>
+                </a>
+            </div>
+        </section>
+
+        <section id="forms">
+            <h2>The forms</h2>
+            <form>
+                <!-- label = nom de l'input -->
+                <!-- for = to relate the label with the input with an id -->
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                <br>
+                <label for="age">Age</label>
+                <input type="number" id="age" placeholder="Enter your age">
+                <br>
+                <label for="gender">Gender</label>
+                <select id="gender">
+                    <option value="Man">Man</option>
+                    <option value="Woman">Woman</option>
+                    <!-- selected="selected" = initial value -->
+                    <option selected="selected" value="Other">Other</option>
+                </select>
+
+                <div>
+                    <!-- name="type" = relate all inputs -->
+                    <input type="radio" name="type" id="human">
+                    <label for="human">Human</label>
+
+                    <input type="radio" name="type" id="dog">
+                    <label for="dog">Dog</label>
+
+                    <input type="radio" name="type" id="cat">
+                    <label for="cat">Cat</label>
+                </div>
+
+                <!-- cols = width | rows = height -->
+                <textarea id="text" placeholder="Enter your text" cols="50" rows="5"></textarea>
+                <br>
+                <input type="checkbox" id="cgv">
+                <label for="cgv">General conditions</label>
+                <br>
+                <input type="submit" value="Press to valid the form">
+            </form>
+            <button>This is just a button bro</button>
+        </section>
+    </main>
+
+    <footer>
+        <!-- download="ThisIsATest = name of the download -->
+        <a href="./dowload/test.txt" download="ThisIsATest">Trust me</a>
+    </footer>
+</body>
+</html>
