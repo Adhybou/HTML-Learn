@@ -1,0 +1,117 @@
+/* Font : Gravitas One --> directly from a site */
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+
+/* To not depend of a site, directly download the font and give it any name */
+@font-face {
+    font-family: "Quicksand";
+    src: url(./font/Quicksand-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    background: url(../png/Cooked.jpg) center/cover;
+    /* vh = cover perfectly the user screen */
+    min-height: 100vh;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    /* 1rem = 16px */
+    font-size: 2.5rem;
+    color: rgb(82, 64, 5);
+    font-family: "Gravitas One", sans-serif;
+}
+
+main {
+    min-height: 500px;
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid rgb(17, 182, 207);
+    border-radius: 20px;
+    box-shadow: 0 0 9px 5px rgb(17, 182, 207);
+}
+
+h2 {
+    margin: 0;
+}
+
+.flexbox, .grid {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.flexbox ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.flexbox li {
+    list-style: none;
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    background: turquoise;
+    /* Center a unique element */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.grid img {
+    width: 80%;
+    margin: 20px auto;
+    padding-left: 10px;
+}
+
+.grid form {
+    display: grid;
+    /* 2 equal columns */
+    grid-template-columns: 1fr 1fr;
+    /* 3 equal rows */
+    grid-template-rows: 1fr 1fr 1fr;
+    /* Manually make the grid */
+    grid-template-areas:
+        "i1 i2"
+        "ta ta"
+        "vi bt";
+}
+
+input, textarea {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid darkblue;
+    font-size: 1.1rem;
+    font-family: "Quicksand";
+    border-radius: 10px;
+}
+
+textarea {
+    /* ta and others are reffered before */
+    grid-area: ta;
+    height: 40px;
+    /* Avoid the user actions */
+    resize: none;
+}
+
+#btn-submit {
+    grid-area: bt;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btn-submit:hover {
+    background: cyan;
+}

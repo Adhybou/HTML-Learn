@@ -9,6 +9,10 @@
 
 body {
     font-family: "Quicksand", sans-serif;
+    background: url(../png/ME.png) center/cover;
+    /* vh = cover perfectly the user screen */
+    min-height: 100vh;
+    
 }
 
 h1 {
