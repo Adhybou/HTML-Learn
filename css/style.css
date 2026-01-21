@@ -1,7 +1,22 @@
+/* Font : Gravitas One --> directly from a site */
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+
+/* To not depend of a site, directly download the font and give it any name */
+@font-face {
+    font-family: "Quicksand";
+    src: url(./font/Quicksand-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
 h1 {
     text-transform: uppercase;
     letter-spacing: 3px;
     text-align: center;
     font-size: 2.5rem;
     text-shadow: 3px 3px 8px #00000057;
+    color: rgb(20, 59, 94);
+    font-family: "Gravitas One", sans-serif;
 }
